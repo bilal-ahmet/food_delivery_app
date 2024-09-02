@@ -25,8 +25,10 @@ class MyDrawer extends StatelessWidget {
               color: Theme.of(context).colorScheme.secondary,
             ),
           ),
-          MyDrawerTile(text: "H O M E", icon: Icons.home, ontap: (){}),
+          MyDrawerTile(text: "H O M E", icon: Icons.home, ontap:() => Navigator.pop(context)),
           MyDrawerTile(text: "S E T T I N G S", icon: Icons.home, ontap: (){}),
+          const Spacer(),
+          MyDrawerTile(text: "L O G  O U T", icon: Icons.logout, ontap: (){}),
         ],
       ),
     );
