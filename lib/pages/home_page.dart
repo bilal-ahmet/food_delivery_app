@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/components/my_current_location.dart';
+import 'package:food_delivery_app/components/my_description_box.dart';
 import 'package:food_delivery_app/components/my_drawer.dart';
 import 'package:food_delivery_app/components/my_sliver_app_bar.dart';
 
@@ -24,7 +25,8 @@ class _HomePageState extends State<HomePage> {
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         Divider(indent: 25, endIndent: 25, color: Theme.of(context).colorScheme.secondary,),
-                        const MyCurrentLocation()
+                        const MyCurrentLocation(),
+                        const MyDescriptionBox()
                       ],
                     ))
               ],
