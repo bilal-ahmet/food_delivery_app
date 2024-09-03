@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/components/my_drawer_tile.dart';
+import 'package:food_delivery_app/pages/stteings_page.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -25,10 +26,23 @@ class MyDrawer extends StatelessWidget {
               color: Theme.of(context).colorScheme.secondary,
             ),
           ),
-          MyDrawerTile(text: "H O M E", icon: Icons.home, ontap:() => Navigator.pop(context)),
-          MyDrawerTile(text: "S E T T I N G S", icon: Icons.home, ontap: (){}),
+          MyDrawerTile(
+              text: "H O M E",
+              icon: Icons.home,
+              ontap: () => Navigator.pop(context)),
+          MyDrawerTile(
+              text: "S E T T I N G S",
+              icon: Icons.home,
+              ontap: () {
+                Navigator.pop(context);
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const SettingsPage(),
+                    ));
+              }),
           const Spacer(),
-          MyDrawerTile(text: "L O G  O U T", icon: Icons.logout, ontap: (){}),
+          MyDrawerTile(text: "L O G  O U T", icon: Icons.logout, ontap: () {}),
         ],
       ),
     );
