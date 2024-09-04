@@ -9,7 +9,7 @@ class MyTabBar extends StatelessWidget {
     return Container(
       child: TabBar(
         controller: tabController, 
-        tabs: [
+        tabs: const [
           Tab(icon: Icon(Icons.home),),
           Tab(icon: Icon(Icons.settings),),
           Tab(icon: Icon(Icons.person),),

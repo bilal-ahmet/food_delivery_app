@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                       ],
                     ))
               ],
-          body: TabBarView(controller: _tabController, children: [Text("hello"), Text("hello"), Text("hello")])),
+          body: TabBarView(controller: _tabController, children: const [Text("hello"), Text("hello"), Text("hello")])),
     );
   }
 }
