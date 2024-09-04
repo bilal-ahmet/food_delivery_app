@@ -76,9 +76,9 @@ class _HomePageState extends State<HomePage>
                       ))
                 ],
             body: Consumer<Restaurant>(
-              builder: (context, Restaurant, child) => TabBarView(
+              builder: (context, restaurant, child) => TabBarView(
                   controller: _tabController,
-                  children: getFoodInThisCategory(Restaurant.menu)),
+                  children: getFoodInThisCategory(restaurant.menu)),
             )));
   }
 }

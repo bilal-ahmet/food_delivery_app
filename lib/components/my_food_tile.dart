@@ -20,7 +20,7 @@ class MyFoodTile extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(food.name),
-                    Text(food.price.toString() + " ₺", style: TextStyle(color: Theme.of(context).colorScheme.primary),),
+                    Text("${food.price} ₺", style: TextStyle(color: Theme.of(context).colorScheme.primary),),
                     const SizedBox(height: 10,),
                     Text(food.description, style: TextStyle(color: Theme.of(context).colorScheme.inversePrimary))
                   ],
