@@ -17,7 +17,7 @@ class MyDescriptionBox extends StatelessWidget {
         children: [
           Column(
             children: [
-              Text("49.99 ₺", style: TextStyle(color: Theme.of(context).colorScheme.inversePrimary)),
+              Text("219.99 ₺", style: TextStyle(color: Theme.of(context).colorScheme.inversePrimary)),
               Text("Delivery fee", style: TextStyle(color: Theme.of(context).colorScheme.primary),)
             ],
           ),

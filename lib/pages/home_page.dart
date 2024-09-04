@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/components/my_current_location.dart';
 import 'package:food_delivery_app/components/my_description_box.dart';
@@ -6,6 +5,8 @@ import 'package:food_delivery_app/components/my_drawer.dart';
 import 'package:food_delivery_app/components/my_sliver_app_bar.dart';
 import 'package:food_delivery_app/components/my_tab_bar.dart';
 import 'package:food_delivery_app/models/food.dart';
+import 'package:food_delivery_app/models/restaurant.dart';
+import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -14,7 +15,8 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin {
+class _HomePageState extends State<HomePage>
+    with SingleTickerProviderStateMixin {
   late TabController _tabController;
 
   @override
@@ -30,7 +32,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
     _tabController.dispose();
   }
 
-  List<Food> _filterMenuByCategory(FoodCategory category, List<Food> fullMenu){
+  List<Food> _filterMenuByCategory(FoodCategory category, List<Food> fullMenu) {
     return fullMenu.where((food) => food.foodCategory == category).toList();
   }
 
@@ -53,32 +55,29 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.surface,
-      drawer: const MyDrawer(),
-      body: NestedScrollView(
-          headerSliverBuilder: (context, innerBoxIsScrolled) => [
-                MySliverAppBar(
-                    title: MyTabBar(tabController: _tabController),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        Divider(
-                          indent: 25,
-                          endIndent: 25,
-                          color: Theme.of(context).colorScheme.secondary,
-                        ),
-                        const MyCurrentLocation(),
-                        const MyDescriptionBox()
-                      ],
-                    ))
-              ],
-          body: TabBarView(controller: _tabController, children: const [
-            Text("hello"),
-            Text("hello"),
-            Text("hello"),
-            Text("hello"),
-            Text("hello")
-          ])),
-    );
+        backgroundColor: Theme.of(context).colorScheme.surface,
+        drawer: const MyDrawer(),
+        body: NestedScrollView(
+            headerSliverBuilder: (context, innerBoxIsScrolled) => [
+                  MySliverAppBar(
+                      title: MyTabBar(tabController: _tabController),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Divider(
+                            indent: 25,
+                            endIndent: 25,
+                            color: Theme.of(context).colorScheme.secondary,
+                          ),
+                          const MyCurrentLocation(),
+                          const MyDescriptionBox()
+                        ],
+                      ))
+                ],
+            body: Consumer<Restaurant>(
+              builder: (context, Restaurant, child) => TabBarView(
+                  controller: _tabController,
+                  children: getFoodInThisCategory(Restaurant.menu)),
+            )));
   }
 }
