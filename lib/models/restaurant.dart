@@ -8,7 +8,7 @@ class Restaurant extends ChangeNotifier{
       name: "Classic Cheeseburger",
       description:
           "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and pickle.",
-      imagePath: "lib/images/burgers/cheese_burger.jpg",
+      imagePath: "assets/burgers/cheese_burger.jpg",
       price: 0.99,
       foodCategory: FoodCategory.burgers,
       availableAddons: [
@@ -21,7 +21,7 @@ class Restaurant extends ChangeNotifier{
       name: "BBQ Burger",
       description:
           "A classic burger featuring a beef patty topped with smoky BBQ sauce, cheddar cheese, crispy onion rings, lettuce, and tomato, all sandwiched between a toasted bun.",
-      imagePath: "lib/images/burgers/bbq_burger.jpg",
+      imagePath: "assets/burgers/bbq_burger.jpg",
       price: 0.99,
       foodCategory: FoodCategory.burgers,
       availableAddons: [
@@ -34,7 +34,7 @@ class Restaurant extends ChangeNotifier{
       name: "Blue Moon Burger",
       description:
           "A beef patty topped with blue cheese, caramelized onions, arugula, and sliced pear, served on a toasted bun.",
-      imagePath: "lib/images/burgers/bluemoon_burger.jpg",
+      imagePath: "assets/burgers/bluemoon_burger.jpg",
       price: 0.99,
       foodCategory: FoodCategory.burgers,
       availableAddons: [
@@ -47,7 +47,7 @@ class Restaurant extends ChangeNotifier{
       name: "Aloha Burger",
       description:
           "A tropical twist on a burger with a beef patty, grilled pineapple slice, teriyaki sauce, lettuce, tomato, and Swiss cheese, all in a toasted bun.",
-      imagePath: "lib/images/burgers/aloha_burger.png",
+      imagePath: "assets/burgers/aloha_burger.png",
       price: 0.99,
       foodCategory: FoodCategory.burgers,
       availableAddons: [
@@ -60,7 +60,7 @@ class Restaurant extends ChangeNotifier{
       name: "Veggie Burger",
       description:
           "A meatless option featuring a veggie patty made from ingredients such as beans, grains, and vegetables, topped with lettuce, tomato, avocado, and your choice of cheese and sauce.",
-      imagePath: "lib/images/burgers/vege_burger.jpg",
+      imagePath: "assets/burgers/vege_burger.jpg",
       price: 0.99,
       foodCategory: FoodCategory.burgers,
       availableAddons: [
@@ -75,7 +75,7 @@ class Restaurant extends ChangeNotifier{
       name: "Caesar Salad",
       description:
           "A salad of romaine lettuce, croutons, and Parmesan cheese, dressed with Caesar dressing.",
-      imagePath: "lib/images/salads/Caesar_Salad.jpg",
+      imagePath: "assets/salads/Caesar_Salad.jpg",
       price: 0.99,
       foodCategory: FoodCategory.salads,
       availableAddons: [
@@ -88,7 +88,7 @@ class Restaurant extends ChangeNotifier{
       name: "Greek Salad",
       description:
           "A salad of tomatoes, cucumbers, red onions, olives, and feta cheese, dressed with olive oil and lemon juice.",
-      imagePath: "lib/images/salads/Greek_Salad.jpg",
+      imagePath: "assets/salads/Greek_Salad.jpg",
       price: 0.99,
       foodCategory: FoodCategory.salads,
       availableAddons: [
@@ -101,7 +101,7 @@ class Restaurant extends ChangeNotifier{
       name: "Caprese Salad",
       description:
           "A simple Italian salad of tomatoes, fresh mozzarella, and basil, drizzled with balsamic glaze.",
-      imagePath: "lib/images/salads/Caprese_Salad.jpg",
+      imagePath: "assets/salads/Caprese_Salad.jpg",
       price: 0.99,
       foodCategory: FoodCategory.salads,
       availableAddons: [
@@ -114,7 +114,7 @@ class Restaurant extends ChangeNotifier{
       name: "Quinoa Salad",
       description:
           "A salad made with quinoa, vegetables like cucumber and bell peppers, and a tangy dressing.",
-      imagePath: "lib/images/salads/Quinoa_Salad.jpg",
+      imagePath: "assets/salads/Quinoa_Salad.jpg",
       price: 0.99,
       foodCategory: FoodCategory.salads,
       availableAddons: [
@@ -127,7 +127,7 @@ class Restaurant extends ChangeNotifier{
       name: "Cobb Salad",
       description:
           "A salad of mixed greens, tomatoes, bacon, boiled eggs, grilled chicken, and avocado, dressed with vinaigrette.",
-      imagePath: "lib/images/salads/Cobb_Salad.jpg",
+      imagePath: "assets/salads/Cobb_Salad.jpg",
       price: 0.99,
       foodCategory: FoodCategory.salads,
       availableAddons: [
@@ -142,7 +142,7 @@ class Restaurant extends ChangeNotifier{
       name: "Garlic Bread",
       description:
           " Bread toasted with garlic butter and herbs, often served alongside pasta dishes.",
-      imagePath: "lib/images/sides/Garlic_Bread.jpg",
+      imagePath: "assets/sides/Garlic_Bread.jpg",
       price: 0.99,
       foodCategory: FoodCategory.sides,
       availableAddons: [
@@ -154,7 +154,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       name: "Mashed Potatoes",
       description: "Creamy, buttery potatoes whipped to a smooth consistency",
-      imagePath: "lib/images/sides/Mashed_Potatoes.jpg",
+      imagePath: "assets/sides/Mashed_Potatoes.jpg",
       price: 0.99,
       foodCategory: FoodCategory.sides,
       availableAddons: [
@@ -167,7 +167,7 @@ class Restaurant extends ChangeNotifier{
       name: "Steamed Asparagus",
       description:
           "Fresh asparagus spears steamed until tender and seasoned with salt and pepper.",
-      imagePath: "lib/images/sides/Steamed_Asparagus.png",
+      imagePath: "assets/sides/Steamed_Asparagus.png",
       price: 0.99,
       foodCategory: FoodCategory.sides,
       availableAddons: [
@@ -180,7 +180,7 @@ class Restaurant extends ChangeNotifier{
       name: "Coleslaw",
       description:
           "A salad of shredded cabbage and carrots, mixed with a creamy or tangy dressing.",
-      imagePath: "lib/images/sides/Coleslaw.jpg",
+      imagePath: "assets/sides/Coleslaw.jpg",
       price: 0.99,
       foodCategory: FoodCategory.sides,
       availableAddons: [
@@ -193,7 +193,7 @@ class Restaurant extends ChangeNotifier{
       name: "Grilled Vegetables",
       description:
           "A selection of seasonal vegetables grilled and seasoned with olive oil and herbs.",
-      imagePath: "lib/images/sides/Grilled_Vegetables.jpg",
+      imagePath: "assets/sides/Grilled_Vegetables.jpg",
       price: 0.99,
       foodCategory: FoodCategory.sides,
       availableAddons: [
@@ -208,7 +208,7 @@ class Restaurant extends ChangeNotifier{
       name: "Chocolate Cake",
       description:
           "A rich, moist cake made with cocoa powder and topped with creamy chocolate frosting or ganache.",
-      imagePath: "lib/images/desserts/Chocolate_Cake.jpg",
+      imagePath: "assets/desserts/Chocolate_Cake.jpg",
       price: 0.99,
       foodCategory: FoodCategory.desserts,
       availableAddons: [
@@ -221,7 +221,7 @@ class Restaurant extends ChangeNotifier{
       name: "Apple Pie",
       description:
           "A classic dessert made with spiced, sweet apple filling encased in a flaky, buttery crust.",
-      imagePath: "lib/images/desserts/Apple_Pie.jpg",
+      imagePath: "assets/desserts/Apple_Pie.jpg",
       price: 0.99,
       foodCategory: FoodCategory.desserts,
       availableAddons: [
@@ -234,7 +234,7 @@ class Restaurant extends ChangeNotifier{
       name: "Tiramisu",
       description:
           "An Italian dessert made with layers of coffee-soaked ladyfingers and mascarpone cheese, dusted with cocoa powder.",
-      imagePath: "lib/images/desserts/Tiramisu.jpg",
+      imagePath: "assets/desserts/Tiramisu.jpg",
       price: 0.99,
       foodCategory: FoodCategory.desserts,
       availableAddons: [
@@ -247,7 +247,7 @@ class Restaurant extends ChangeNotifier{
       name: "Cheesecake",
       description:
           "A creamy dessert with a crumbly crust and a sweet, smooth cheese filling, often topped with fruit or chocolate.",
-      imagePath: "lib/images/desserts/Cheesecake.jpg",
+      imagePath: "assets/desserts/Cheesecake.jpg",
       price: 0.99,
       foodCategory: FoodCategory.desserts,
       availableAddons: [
@@ -260,7 +260,7 @@ class Restaurant extends ChangeNotifier{
       name: "Creme Brulee",
       description:
           "A French dessert consisting of a rich custard base with a crispy, caramelized sugar topping.",
-      imagePath: "lib/images/desserts/Creme_Brulee.jpg",
+      imagePath: "assets/desserts/Creme_Brulee.jpg",
       price: 0.99,
       foodCategory: FoodCategory.desserts,
       availableAddons: [
@@ -275,7 +275,7 @@ class Restaurant extends ChangeNotifier{
       name: "Mojito",
       description:
           "A refreshing cocktail made with white rum, lime juice, mint leaves, sugar, and soda water.",
-      imagePath: "lib/images/drinks/Mojito.jpg",
+      imagePath: "assets/drinks/Mojito.jpg",
       price: 0.99,
       foodCategory: FoodCategory.drinks,
       availableAddons: [
@@ -288,7 +288,7 @@ class Restaurant extends ChangeNotifier{
       name: "Iced Coffee",
       description:
           "A chilled coffee beverage served over ice, often with milk or cream and sweetener.",
-      imagePath: "lib/images/drinks/Iced_Coffee.jpg",
+      imagePath: "assets/drinks/Iced_Coffee.jpg",
       price: 0.99,
       foodCategory: FoodCategory.drinks,
       availableAddons: [
@@ -301,7 +301,7 @@ class Restaurant extends ChangeNotifier{
       name: "Piña Colada",
       description:
           "A tropical cocktail made with rum, coconut cream, and pineapple juice, garnished with a pineapple wedge.",
-      imagePath: "lib/images/drinks/Pina_Colada.jpg",
+      imagePath: "assets/drinks/Pina_Colada.jpg",
       price: 0.99,
       foodCategory: FoodCategory.drinks,
       availableAddons: [
@@ -314,7 +314,7 @@ class Restaurant extends ChangeNotifier{
       name: "Matcha Latte",
       description:
           "A smooth, frothy beverage made with matcha green tea powder and steamed milk.",
-      imagePath: "lib/images/drinks/Matcha_Latte.jpg",
+      imagePath: "assets/drinks/Matcha_Latte.jpg",
       price: 0.99,
       foodCategory: FoodCategory.drinks,
       availableAddons: [
@@ -327,7 +327,7 @@ class Restaurant extends ChangeNotifier{
       name: "Berry Smoothie",
       description:
           "A healthy drink made with blended berries, yogurt, and a liquid base like juice or milk.",
-      imagePath: "lib/images/drinks/Berry_Smoothie.jpg",
+      imagePath: "assets/drinks/Berry_Smoothie.jpg",
       price: 0.99,
       foodCategory: FoodCategory.drinks,
       availableAddons: [
