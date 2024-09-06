@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/components/my_receipt.dart';
 
 class DeliveryProgressPage extends StatelessWidget {
   const DeliveryProgressPage({super.key});
@@ -6,7 +7,12 @@ class DeliveryProgressPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Delivery Progress"),),
+      appBar: AppBar(centerTitle: true, title: const Text("Delivery Progress"), backgroundColor: Colors.transparent,),
+      body: const Column(
+        children: [
+          MyReceipt()
+        ],
+      )
     );
   }
 }
