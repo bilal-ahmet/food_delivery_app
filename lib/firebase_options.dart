@@ -58,7 +58,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyBsmxdvOl_zZtDoeFxT2rxcos5WbYbcpCQ',
-    appId: '1:37851620542:android:495bb050f5ef9165b66aef',
+    appId: '1:37851620542:android:e0b826c61dd56036b66aef',
     messagingSenderId: '37851620542',
     projectId: 'food-delivery-e-commerce-c8def',
     storageBucket: 'food-delivery-e-commerce-c8def.appspot.com',
@@ -72,4 +72,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'food-delivery-e-commerce-c8def.appspot.com',
     iosBundleId: 'com.example.foodDeliveryApp',
   );
+
 }
