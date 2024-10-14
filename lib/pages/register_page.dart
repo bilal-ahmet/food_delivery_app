@@ -25,6 +25,7 @@ class _RegisterPageState extends State<RegisterPage> {
       try {
         await authService.signUpWithEmailAndPassword(emailController.text, passwordController.text);
       } catch (e) {
+        // ignore: use_build_context_synchronously
         showDialog(context: context, builder: (context) => AlertDialog(title: Text(e.toString()),),);
       }
     }

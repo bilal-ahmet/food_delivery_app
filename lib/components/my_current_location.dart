@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery_app/models/restaurant.dart';
 import 'package:provider/provider.dart';
 
+// ignore: must_be_immutable
 class MyCurrentLocation extends StatelessWidget {
   MyCurrentLocation({super.key});
 
