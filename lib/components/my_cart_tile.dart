@@ -39,13 +39,8 @@ class MyCartTile extends StatelessWidget {
                   children: [
                     Text(cartItem.food.name),
                     Text("${cartItem.food.price} ₺"),
-                  ],
-                ),
-                const Spacer(),
-                const SizedBox(
-                  width: 15,
-                ),
-                MyQuantitySelector(
+                    const SizedBox(height: 10,),
+                    MyQuantitySelector(
                     quantity: cartItem.quantity,
                     food: cartItem.food,
                     onIncrement: () {
@@ -55,6 +50,12 @@ class MyCartTile extends StatelessWidget {
                     onDecrement: () {
                       restaurant.removeFromCart(cartItem);
                     })
+                  ],
+                ),
+                const Spacer(),
+                const SizedBox(
+                  width: 15,
+                ),
               ],
             ),
             SizedBox(

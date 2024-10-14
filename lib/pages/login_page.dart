@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/components/my_button.dart';
 import 'package:food_delivery_app/components/my_text_field.dart';
-import 'package:food_delivery_app/pages/home_page.dart';
 import 'package:food_delivery_app/services/auth/auth_service.dart';
 
 class LoginPage extends StatefulWidget {
@@ -23,7 +22,7 @@ class _LoginPageState extends State<LoginPage> {
 
     // try sign in
     try {
-      await authService.SignInWithEmailAndPassword(emailController.text, passwordController.text);
+      await authService.signInWithEmailAndPassword(emailController.text, passwordController.text);
     } catch (e) {
       showDialog(context: context, builder: (context) => AlertDialog(title: Text(e.toString()),),);
     }

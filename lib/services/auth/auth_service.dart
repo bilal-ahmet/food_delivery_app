@@ -10,7 +10,7 @@ class AuthService {
   }
 
   // sign in
-  Future<UserCredential> SignInWithEmailAndPassword(
+  Future<UserCredential> signInWithEmailAndPassword(
       String email, String password) async {
     try {
       UserCredential userCredential = await firebaseAuth
@@ -22,7 +22,7 @@ class AuthService {
   }
 
   // sign up
-  Future<UserCredential> SignUpWithEmailAndPassword(
+  Future<UserCredential> signUpWithEmailAndPassword(
       String email, String password) async {
     try {
       UserCredential userCredential = await firebaseAuth

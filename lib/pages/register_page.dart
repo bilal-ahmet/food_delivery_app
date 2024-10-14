@@ -23,7 +23,7 @@ class _RegisterPageState extends State<RegisterPage> {
     // check if password match  -> create user
     if(passwordController.text == confirmPasswordController.text){
       try {
-        await authService.SignUpWithEmailAndPassword(passwordController.text, confirmPasswordController.text);
+        await authService.signUpWithEmailAndPassword(emailController.text, passwordController.text);
       } catch (e) {
         showDialog(context: context, builder: (context) => AlertDialog(title: Text(e.toString()),),);
       }
